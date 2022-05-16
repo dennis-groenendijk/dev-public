@@ -7,7 +7,6 @@ const OvenTime = 40
 func RemainingOvenTime(actualMinutesInOven int) int {
     rot := OvenTime - actualMinutesInOven
     return rot
-	panic("RemainingOvenTime not implemented")
 }
 
 // PreparationTime calculates the time needed to prepare the lasagna based on the amount of layers.
@@ -15,7 +14,6 @@ func PreparationTime(numberOfLayers int) int {
     timePerLayer := 2
     prep := numberOfLayers * timePerLayer
     return prep
-	panic("PreparationTime not implemented")
 }
 
 // ElapsedTime calculates the total time needed to create and bake a lasagna.
@@ -24,7 +22,6 @@ func ElapsedTime(numberOfLayers, actualMinutesInOven int) int {
 	prep := numberOfLayers * timePerLayer
 	totalTime := prep + actualMinutesInOven
 	return totalTime
-	panic("ElapsedTime not implemented")
 }
 
 func main() {

@@ -15,7 +15,6 @@ func NewCar(speed, batteryDrain int) Car {
         batteryDrain: 	batteryDrain,
         battery:		100,
     }
-	panic("Please implement the NewCar function")
 }
 
 // TODO: define the 'Track' type struct
@@ -28,7 +27,6 @@ func NewTrack(distance int) Track {
     return Track {
         distance: distance,
     }
-	panic("Please implement the NewTrack function")
 }
 
 // Drive drives the car one time. If there is not enough battery to drive on more time,
@@ -42,12 +40,10 @@ func Drive(car Car) Car {
         car.distance = newDistance
     }
 	return car
-	panic("Please implement the Drive function")
 }
 
 // CanFinish checks if a car is able to finish a certain track.
 func CanFinish(car Car, track Track) bool {
     maxDistance := car.battery / car.batteryDrain * car.speed
     return maxDistance >= track.distance
-	panic("Please implement the CanFinish function")
 }

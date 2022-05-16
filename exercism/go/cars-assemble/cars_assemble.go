@@ -7,7 +7,6 @@ func CalculateWorkingCarsPerHour(productionRate int, successRate float64) float6
     percentage := successRate / 100.00
     producedSuccessfull := pr * percentage
     return producedSuccessfull
-	panic("CalculateWorkingCarsPerHour not implemented")
 }
 
 // CalculateWorkingCarsPerMinute calculates how many working cars are
@@ -18,7 +17,6 @@ func CalculateWorkingCarsPerMinute(productionRate int, successRate float64) int 
     producedSuccessfull := pr * percentage / 60.00
     producedSuccessfullPerMinute := int(producedSuccessfull)
     return producedSuccessfullPerMinute
-	panic("CalculateWorkingCarsPerMinute not implemented")
 }
 
 // CalculateCost works out the cost of producing the given number of cars
@@ -27,5 +25,4 @@ func CalculateCost(carsCount int) uint {
     remainingCarsCost := carsCount % 10 * 10000
     totalCost := uint(groupsOfTenCost + remainingCarsCost)
     return totalCost
-	panic("CalculateCost not implemented")
 }

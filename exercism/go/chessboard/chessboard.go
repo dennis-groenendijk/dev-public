@@ -17,7 +17,6 @@ func CountInRank(cb Chessboard, rank string) int {
         }
     }
 	return occupiedSquares
-	panic("Please implement CountInRank()")
 }
 
 // CountInFile returns how many squares are occupied in the chessboard,
@@ -33,7 +32,6 @@ func CountInFile(cb Chessboard, file int) int {
         }
     }
 	return occupiedSquares
-	panic("Please implement CountInFile()")
 }
 
 // CountAll should count how many squares are present in the chessboard
@@ -45,7 +43,6 @@ func CountAll(cb Chessboard) int {
         sumOfSquares += numOfFiles
     }
 	return sumOfSquares
-	panic("Please implement CountAll()")
 }
 
 // CountOccupied returns how many squares are occupied in the chessboard
@@ -57,5 +54,4 @@ func CountOccupied(cb Chessboard) int {
         occupiedSquares += CountInRank(cb, rank)
     }
 	return occupiedSquares
-	panic("Please implement CountOccupied()")
 }
