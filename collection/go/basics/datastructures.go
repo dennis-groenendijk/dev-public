@@ -4,82 +4,82 @@ import (
 	"fmt"
 )
 
-// Data Structures (array, stack, queue, map, set)
+// Basics of Data Structures (Array, Stack, Queue, Map, Set)
 
 func main() {
 	fmt.Println("Array is an sequential collection of items")
 
-	r := []int{2, 6, 4, 3, 45, 7, 8, 8, 76, 6}
-	fmt.Println(r)
-	for _, v := range r {
-		fmt.Println(v)
+	array := []int{2, 6, 4, 3, 45, 7, 8, 8, 76, 6}
+	fmt.Println(array)
+	for _, value := range array {
+		fmt.Println(value)
 	}
 
 	fmt.Println("Stack is Last In First Out / First In Last Out")
 
-	s := []int{}
+	stack := []int{}
 
-	s = pushToStack(5, s) // [5]
-	fmt.Println(s)
-	s = pushToStack(10, s) // [5, 10]
-	fmt.Println(s)
-	s = pushToStack(3, s) // [5, 10, 3]
-	fmt.Println(s)
-	s = pushToStack(7, s) // [5, 10, 3, 7]
-	fmt.Println(s)
+	stack = pushToStack(5, stack) // [5]
+	fmt.Println(stack)
+	stack = pushToStack(10, stack) // [5, 10]
+	fmt.Println(stack)
+	stack = pushToStack(3, stack) // [5, 10, 3]
+	fmt.Println(stack)
+	stack = pushToStack(7, stack) // [5, 10, 3, 7]
+	fmt.Println(stack)
 
-	e := 0
-	e, s = popFromStack(s)
-	fmt.Println("popped ", e, "from stack, stack is now", s)
-	e, s = popFromStack(s)
-	fmt.Println("popped ", e, "from stack, stack is now", s)
-	e, s = popFromStack(s)
-	fmt.Println("popped ", e, "from stack, stack is now", s)
-	e, s = popFromStack(s)
-	fmt.Println("popped ", e, "from stack, stack is now", s)
+	element := 0
+	element, stack = popFromStack(stack)
+	fmt.Println("popped ", element, "from stack, stack is now", stack)
+	element, stack = popFromStack(stack)
+	fmt.Println("popped ", element, "from stack, stack is now", stack)
+	element, stack = popFromStack(stack)
+	fmt.Println("popped ", element, "from stack, stack is now", stack)
+	element, stack = popFromStack(stack)
+	fmt.Println("popped ", element, "from stack, stack is now", stack)
 
 	fmt.Println("Queue is First In First Out")
 
-	// empty array again for reuse in queue fun
-	s = []int{}
+	// empty array again for reuse in queue example
+	stack = []int{}
 
-	s = pushToQueue(5, s) // [5]
-	fmt.Println(s)
-	s = pushToQueue(10, s) // [5, 10]
-	fmt.Println(s)
-	s = pushToQueue(3, s) // [5, 10, 3]
-	fmt.Println(s)
-	s = pushToQueue(7, s) // [5, 10, 3, 7]
-	fmt.Println(s)
+	stack = pushToQueue(5, stack) // [5]
+	fmt.Println(stack)
+	stack = pushToQueue(10, stack) // [5, 10]
+	fmt.Println(stack)
+	stack = pushToQueue(3, stack) // [5, 10, 3]
+	fmt.Println(stack)
+	stack = pushToQueue(7, stack) // [5, 10, 3, 7]
+	fmt.Println(stack)
 
-	e, s = popFromQueue(s)
-	fmt.Println("popped ", e, "from Queue, Queue is now", s)
-	e, s = popFromQueue(s)
-	fmt.Println("popped ", e, "from Queue, Queue is now", s)
-	e, s = popFromQueue(s)
-	fmt.Println("popped ", e, "from Queue, Queue is now", s)
-	e, s = popFromQueue(s)
-	fmt.Println("popped ", e, "from Queue, Queue is now", s)
+	element, stack = popFromQueue(stack)
+	fmt.Println("popped ", element, "from Queue, Queue is now", stack)
+	element, stack = popFromQueue(stack)
+	fmt.Println("popped ", element, "from Queue, Queue is now", stack)
+	element, stack = popFromQueue(stack)
+	fmt.Println("popped ", element, "from Queue, Queue is now", stack)
+	element, stack = popFromQueue(stack)
+	fmt.Println("popped ", element, "from Queue, Queue is now", stack)
 
 	fmt.Println("Map")
-	m := map[string]int{"jemoeder": 2, "jevader": 2, "jezuster": 2, "jebroer": 2}
+	m := map[string]int{"Batman": 2, "Flash": 2, "Superman": 2, "Aquaman": 2}
 	fmt.Println(m)
-	m["jetante"] = 21
+	m["Flash"] = 21
 	fmt.Println(m)
-	m["jetante"] = 24
+	m["Flash"] = 24
 	fmt.Println(m)
-	delete(m, "jetante")
+	delete(m, "Aquaman")
 	fmt.Println(m)
 
 	for k, v := range m {
 		fmt.Println("Key:", k, "Value:", v)
 	}
 
-	fmt.Println("map key jevader has value", m["jevader"])
-	v, ok := m["garble"]
-	fmt.Println("map key garble has entry:", ok, "value retrieved was", v)
-	v, ok = m["jevader"]
-	fmt.Println("map key jevader has entry:", ok, "value retrieved was", v)
+	fmt.Println("map key Batman has value", m["Batman"])
+	v, ok := m["Cyborg"]
+	fmt.Println("map key Cyborg has entry:", ok, "value retrieved was", v)
+	v, ok = m["Batman"]
+	fmt.Println("map key Batman has entry:", ok, "value retrieved was", v)
 
 	fmt.Println("Set")
 	mySet := map[string]bool{}
@@ -111,7 +111,6 @@ func main() {
 	}
 	fmt.Println("deduplicated:")
 	fmt.Println(deduplicatedNumbers)
-
 
 	fmt.Println("deduplication with sequence preservation")
 	numbers2 := []int{2, 5, 6, 3, 2, 2, 6, 75, 2, 35, 246, 246, 123, 3, 1, 5, 6, 3, 1, 3, 4}
