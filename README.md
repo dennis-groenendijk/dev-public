@@ -1,1 +1,20 @@
-# This repo holds some of the code I've written following courses or for educational fun. Have a look to get a feel of how I think and work ;o )
+### Hi!
+This repo holds code I've written following courses or for educational fun. Have a look to get a feel of how I think and work ;o )
+
+### Directories:
+```
+.
+├── collection
+│   ├── go
+│   │   ├── basics
+│   │   ├── concurrency
+│   │   ├── fizzbuzz
+│   │   └── wordcounter
+│   └── java
+│       └── fizzbuzz
+└── exercism
+    ├── csharp
+    ├── go
+    ├── java
+    └── php
+```
