@@ -11,7 +11,8 @@ This repo holds code I've written following courses or for educational fun. Have
 │   │   ├── fizzbuzz
 │   │   └── wordcounter
 │   └── java
-│       └── fizzbuzz
+│       ├── fizzbuzz
+│       └── thinkjava
 └── exercism
     ├── csharp
     ├── go
