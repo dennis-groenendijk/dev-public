@@ -26,8 +26,83 @@ declare(strict_types=1);
 
 class Tournament
 {
+    public const HEADING = 'Team                           | MP |  W |  D |  L |  P';
+    private array $teams = [];
+
     public function __construct()
     {
-        throw new BadFunctionCallException("Please implement the Tournament class!");
+    }
+
+    public function tally($scores): string
+    {
+        $table = [self::HEADING];
+
+        $results = array_values(array_filter(explode("\n", $scores)));
+        foreach ($results as $result) {
+            [$teamA, $teamB, $outcome] = explode(';', $result);
+            $this->addTeam($teamA);
+            $this->addTeam($teamB);
+            $this->addResult($teamA, $teamB, $outcome);
+        }
+        $this->sortTeams();
+
+        $table = array_merge($table, $this->printTeams());
+        return implode("\n", $table);
+    }
+
+    private function addTeam(string $team): void
+    {
+        if (!array_search($team, array_column($this->teams, 'name'))) {
+            $this->teams[] = ['Team' => $team, 'W' => 0, 'D' => 0, 'L' => 0];
+        }
+    }
+
+    private function addResult(string $teamA, string $teamB, string $outcome): void
+    {
+        $A = array_search($teamA, array_column($this->teams, 'Team'));
+        $B = array_search($teamB, array_column($this->teams, 'Team'));
+        switch ($outcome) {
+            case 'W':
+                $this->teams[$A]['W']++;
+                $this->teams[$B]['L']++;
+                break;
+            case 'D':
+                $this->teams[$A]['D']++;
+                $this->teams[$B]['D']++;
+                break;
+            case 'L':
+                $this->teams[$A]['L']++;
+                $this->teams[$B]['W']++;
+                break;
+        }
+    }
+
+    private function sortTeams(): void
+    {
+        usort($this->teams, function ($A, $B) {
+            $pointsA = 3 * $A['W'] + $A['D'];
+            $pointsB = 3 * $B['W'] + $B['D'];
+
+            if ($pointsA == $pointsB) {
+                return $A['Team'] < $B['Team'] ? -1 : 1;
+            }
+            return $pointsA > $pointsB ? -1 : 1;
+        });
+    }
+
+    private function printTeams(): array
+    {
+        return array_map(
+            fn ($team) => sprintf(
+                "%-30s | %2d | %2d | %2d | %2d | %2d",
+                $team['Team'],
+                array_sum($team),
+                $team['W'],
+                $team['D'],
+                $team['L'],
+                3 * $team['W'] + $team['D']
+            ),
+            $this->teams
+        );
     }
 }
