@@ -50,14 +50,14 @@ class Tournament
         return implode("\n", $table);
     }
 
-    private function addTeam(string $team): void
+    protected function addTeam(string $team): void
     {
-        if (!array_search($team, array_column($this->teams, 'name'))) {
+        if (array_search($team, array_column($this->teams, 'Team')) === false) {
             $this->teams[] = ['Team' => $team, 'W' => 0, 'D' => 0, 'L' => 0];
         }
     }
 
-    private function addResult(string $teamA, string $teamB, string $outcome): void
+    protected function addResult(string $teamA, string $teamB, string $outcome): void
     {
         $A = array_search($teamA, array_column($this->teams, 'Team'));
         $B = array_search($teamB, array_column($this->teams, 'Team'));
@@ -77,7 +77,7 @@ class Tournament
         }
     }
 
-    private function sortTeams(): void
+    protected function sortTeams(): void
     {
         usort($this->teams, function ($A, $B) {
             $pointsA = 3 * $A['W'] + $A['D'];
@@ -90,7 +90,7 @@ class Tournament
         });
     }
 
-    private function printTeams(): array
+    protected function printTeams(): array
     {
         return array_map(
             fn ($team) => sprintf(
