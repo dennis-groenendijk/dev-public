@@ -19,5 +19,6 @@ This repo holds code I've written following courses or for educational fun. Have
     ├── csharp
     ├── go
     ├── java
-    └── php
+    ├── php
+    └── typescript
 ```
