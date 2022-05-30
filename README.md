@@ -11,8 +11,10 @@ This repo holds code I've written following courses or for educational fun. Have
 │   │   ├── fizzbuzz
 │   │   └── wordcounter
 │   └── java
-│       ├── fizzbuzz
-│       └── thinkjava
+│   │   ├── fizzbuzz
+│   │   └── thinkjava
+│   └── react
+│       └── tic-tac-toe
 └── exercism
     ├── csharp
     ├── go
