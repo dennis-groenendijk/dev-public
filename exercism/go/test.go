@@ -1,10 +1,7 @@
 package test
 
-
-// TODO: do this
+// todo: test something
 
 func main() {
-
-
 
 }

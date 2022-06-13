@@ -7,8 +7,11 @@ This repo holds code I've written following courses or for educational fun. Have
 ├── collection
 │   ├── go
 │   │   ├── basics
-│   │   ├── concurrency
+│   │   │   ├── concurrency
+│   │   │   ├── datastructures
+│   │   │   └── hello
 │   │   ├── fizzbuzz
+│   │   ├── utilities
 │   │   └── wordcounter
 │   └── java
 │   │   ├── fizzbuzz
