@@ -1,0 +1,10 @@
+
+qphp:S100"QRename function "__contruct" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(ûó‡Üùÿÿÿÿ8È·ü¸‡1
+:php:S113"'Add a new line at the end of this file.8È·ü¸‡1
+L	php:S1172!"0Remove the unused function parameter "$newPlan".(õÃñÖ8È·ü¸‡1
+r	php:S1848<"QEither remove this useless object instantiation of class "Subscription" or use it(è±°ƒøÿÿÿÿ8È·ü¸‡1
+	php:S1186"lAdd a nested comment explaining why this method is empty, throw an Exception or complete the implementation.(­ùê“ûÿÿÿÿ8È·ü¸‡1
+ˆ	php:S1186"lAdd a nested comment explaining why this method is empty, throw an Exception or complete the implementation.(Ùè¥‡8È·ü¸‡1
+ˆ	php:S1186!"lAdd a nested comment explaining why this method is empty, throw an Exception or complete the implementation.(õÃñÖ8È·ü¸‡1
+	php:S11861"lAdd a nested comment explaining why this method is empty, throw an Exception or complete the implementation.(ñÊŸÛøÿÿÿÿ8É·ü¸‡1
+ˆ	php:S11866"lAdd a nested comment explaining why this method is empty, throw an Exception or complete the implementation.(±Û·º8É·ü¸‡1

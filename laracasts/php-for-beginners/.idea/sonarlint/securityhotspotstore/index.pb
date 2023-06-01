@@ -1,0 +1,37 @@
+
+I
+section-01/index.view.php,d/7/d7c730ad900780493fe0957033bc61bf37897c6a
+T
+$section-02/views/partials/banner.php,0/a/0a81be78ebe14d598051a70b5e553c59e3b61d75
+T
+$section-02/views/partials/footer.php,f/9/f94f68d340f45d0b87e99645b65f5e3c8c7da466
+R
+"section-02/views/partials/head.php,c/3/c3ccde93d83652fb848adcbecbf8839171951581
+Q
+!section-02/views/contact.view.php,e/c/ec20045731de68a930f0b447ace5aecec636b3ae
+P
+ section-02/controllers/index.php,0/3/03659e68887d5c691d0924db10e1b9d07867cb3f
+R
+"section-02/controllers/contact.php,2/3/2354326207b5067cf72e70890c6b25953569a7f3
+P
+ section-02/controllers/about.php,a/0/a084483f6b244c49e48898bdc0962fb9a4c00d12
+O
+section-02/views/about.view.php,c/7/c7272a823c6b601805abb85093dd3fa51a6ea3f8
+Q
+!section-02/views/partials/nav.php,5/d/5d874480c2f59f069dac917dbfabefdbcbd2b1d6
+O
+section-02/views/index.view.php,6/0/605430b545c7b20fe757459fe21d0f318dfb25e4
+H
+section-02/views/404.php,0/e/0e5e5171ded73ee3125624dec2ad7ccc905706c0
+D
+section-01/index.php,b/9/b9f8d696f12c25b1c4d3e03d0c2d550ff1c27457
+E
+section-02/config.php,f/a/fa7c53aa183ab4c6d9637394c24c903d5dc14508
+H
+section-02/functions.php,7/1/7188fc9b8cdf40f3c5ef7056701574329d68b4b4
+E
+section-02/router.php,5/9/594a7690f11f47d30d9e67eaf6e9e66e1f64a072
+G
+section-02/Database.php,8/7/874103b81639d686080d9aeec42ee1c7201117ea
+D
+section-02/index.php,1/f/1fc528024e87b6f55df2f2b810239e5b8c1ed189
