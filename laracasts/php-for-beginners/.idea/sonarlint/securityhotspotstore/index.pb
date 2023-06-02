@@ -25,13 +25,25 @@ H
 section-02/views/404.php,0/e/0e5e5171ded73ee3125624dec2ad7ccc905706c0
 D
 section-01/index.php,b/9/b9f8d696f12c25b1c4d3e03d0c2d550ff1c27457
-E
-section-02/config.php,f/a/fa7c53aa183ab4c6d9637394c24c903d5dc14508
-H
-section-02/functions.php,7/1/7188fc9b8cdf40f3c5ef7056701574329d68b4b4
-E
-section-02/router.php,5/9/594a7690f11f47d30d9e67eaf6e9e66e1f64a072
-G
-section-02/Database.php,8/7/874103b81639d686080d9aeec42ee1c7201117ea
-D
-section-02/index.php,1/f/1fc528024e87b6f55df2f2b810239e5b8c1ed189
+X
+(02-dynamic-web-applications/Database.php,4/3/43bbb65669eb5752f99e4534ddd1be7543dc0ab6
+V
+&02-dynamic-web-applications/config.php,3/6/365a2cd7152d90998dcf3ad252e88801fc1caba3
+V
+&02-dynamic-web-applications/router.php,0/a/0a1b96a9fe2b49ea46233e7598c70837a044fcaa
+U
+%02-dynamic-web-applications/index.php,e/9/e9877e264471e26b1e6dd9331f0e92a7c829f684
+Y
+)02-dynamic-web-applications/functions.php,c/1/c176cad597bbdbec78220b64ba85081158233f11
+\
+,03-mini-project-notes/views/partials/nav.php,f/5/f57de8e7f7d27c5742eaefe6fdd666250c2cc3d8
+P
+ 03-mini-project-notes/router.php,d/e/de71d16866eef38d22a7c307d53202a9d5ceacb7
+[
++03-mini-project-notes/controllers/about.php,2/3/234a0865b70d6b6955f3067b359bb619e1579804
+Z
+*03-mini-project-notes/views/notes.view.php,4/f/4fe915c7cf9eac191eeffa2578b1374bc9cb8fcf
+[
++03-mini-project-notes/controllers/notes.php,a/8/a81092081973b4d652e7ee23ec9e78fb202db568
+O
+03-mini-project-notes/index.php,1/7/17ef6f5124c899de6d210990da0e459123d45204
