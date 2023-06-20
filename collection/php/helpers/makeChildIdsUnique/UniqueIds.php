@@ -4,6 +4,8 @@
  * This code example is an extraction from a class in prod env
  */
 
+namespace makeChildIdsUnique;
+
 class UniqueIds
 {
     private array $memory;

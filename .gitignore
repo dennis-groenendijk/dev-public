@@ -4,3 +4,7 @@
 # exercism java
 HELP.md
 build.gradle
+
+#php
+phpunit.phar
+phpunit.xml
