@@ -26,7 +26,9 @@ This repo holds code I've written following courses or for educational fun. Have
 │   ├── java
 │   ├── php
 │   └── typescript
-└── laracasts
-    ├── oop-for-php
-    └── php-for-beginners    
+├── laracasts
+│   ├── oop-for-php
+│   └── php-for-beginners
+└── workshops
+    └── go-syntax 
 ```
