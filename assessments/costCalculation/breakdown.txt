@@ -1,0 +1,32 @@
+> measure the usage of and calc costs accordingly:
+    [done] electricity (type 1), Mo - Fr, 23:00 - 07:00, 0,18/kWh
+    [done] electricity (type 1), Mo - Fr, 07:00 - 23:00, 0,20/kWh
+    [done] electricity (type 1), Weekend, 23:00 - 07:00, 0,18/kWh
+    [done] electricity (type 1), Weekend, 07:00 - 23:00, 0,18/kWh
+    [done] gas (type 2), 23:00 - 07:00, 0,06/kWh
+    [done] gas (type 2), 07:00 - 23:00, 0,06/kWh
+        > is simplified ;o )
+
+> readings interval
+    [done] check if interval of 15 minutes is correct
+    [done] timestamps format needs conversion
+        * unix to time
+    [done] timestamps needs to be compared
+    [done] usage = reading[i + 1] - reading[i]
+
+> calculate the total cost for all usages per metering_point_id
+    > metering points can return errors
+        [done] incorrect reading is negative usage or usage is gt 100
+        [done] filter incorrect readings before (final) calc
+            > filtering is
+                * skip incorrect reading value
+                * consume linearly (usage between two correct readings is divided equally per 15 min)
+    [done] readings are in Wh and m3 and need to be converted to kWh
+    [done] cost per usage needs to be summed per metering_point_id
+
+
+> assumptions (never make assumptions => test!)
+    - csv data is formatted as text, for indexing purpose
+    - golang 1.18 (or later) is installed
+    - golangci-lint is installed
+    - testify is installed
