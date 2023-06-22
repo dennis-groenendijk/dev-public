@@ -1,5 +1,5 @@
 ### Hi!
-This repo holds code I've written following courses or for educational fun. Have a look to get a feel of how I think and work ;o )
+This repo presents code I've written following courses or for educational fun. Have a look to get a feel of how I think and work or get in touch if you'd like to see more ;o )
 
 ### Directories:
 ```
