@@ -10,7 +10,7 @@ class Printers
     {
         echo '<pre>';
         print_r($array);
-        echo '<pre>';
+        echo '</pre>';
     }
 
     // dd (dump and die) prints the provided variable in a readable format and stops the program
